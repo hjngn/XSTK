@@ -1,0 +1,15 @@
+# Môi trường phân tích của nhóm XSTK (tương thích Kaggle Python image)
+# Cài đặt: pip install -r requirements.txt
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+matplotlib>=3.7
+seaborn>=0.12
+statsmodels>=0.14       # OLS, VIF, Breusch-Pagan, Durbin-Watson, HC3, Tukey HSD
+scikit-learn>=1.3       # train/test split, RMSE, MAE (TV4)
+scikit-posthocs>=0.8    # Dunn test sau Kruskal-Wallis (TV3)
+pingouin>=0.5.3         # Welch ANOVA, Games-Howell, effect size (TV3)
+jupyter>=1.0
+nbconvert>=7.0
+python-docx>=1.1        # dựng báo cáo .docx (report/build_report.py)
+pypandoc-binary>=1.13   # chuyển Markdown -> Word (đã kèm pandoc)

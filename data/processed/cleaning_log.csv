@@ -1,0 +1,10 @@
+buoc,noi_dung,so_dong_truoc,so_dong_bi_loai,so_dong_con_lai,ly_do
+0,Đọc dữ liệu gốc,8128,0,8128,"Car details v3.csv, 13 cột"
+1,Xoá dòng trùng lặp hoàn toàn,8128,1202,6926,"Trùng cả 13 cột, giữ lần xuất hiện đầu"
+2,Tách đơn vị mileage/engine/max_power/torque,6926,0,6926,Không loại dòng; 15 ô mileage = 0 và 4 ô max_power rỗng/0 -> NA; 3 ô torque vô lý -> NA
+3,Loại dòng thiếu mileage/engine/max_power/seats,6926,224,6702,Tin rao không có thông số kỹ thuật; gồm cả mileage = 0 và max_power rỗng/0
+4,Loại owner = Test Drive Car,6702,5,6697,Không thuộc thang số đời chủ; nhóm quá nhỏ; giá gần xe mới
+4,Gộp seller_type Trustmark Dealer vào Dealer,6697,0,6697,27 xe; Trustmark là đại lý được chứng nhận; không loại dòng
+5,Loại km_driven > 500.000,6697,3,6694,Giá trị vô lý / lỗi nhập liệu
+5,Loại km_driven < 1.000 với xe >= 2 năm tuổi,6694,1,6693,Giá trị vô lý / lỗi nhập liệu
+7,Xuất cleaned_cars.csv v1.0,6693,0,6693,Đóng băng phiên bản 1.0
