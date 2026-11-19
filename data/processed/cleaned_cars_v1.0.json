@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "freeze_date": "2026-11-18",
+  "raw_file": "Car details v3.csv",
+  "raw_sha256": "788e7f7a5be161011789a0d4b64ea0879570348c943a414f4f99953f58d74048",
+  "raw_shape": [
+    8128,
+    13
+  ],
+  "n_duplicates_removed": 1202,
+  "cleaned_file": "cleaned_cars.csv",
+  "cleaned_shape": [
+    6693,
+    22
+  ],
+  "cleaned_sha256": "6ab4915f9d99638e87b3e7e425d721568392f82af5f5662119e3cc4961604585",
+  "reference_year": 2020,
+  "rules": {
+    "km_driven_max": 500000,
+    "km_driven_min_if_age_ge_2": 1000,
+    "kgm_to_nm": 9.80665
+  },
+  "counts": {
+    "fuel": {
+      "Diesel": 3651,
+      "Petrol": 2957,
+      "CNG": 50,
+      "LPG": 35
+    },
+    "fuel_group": {
+      "Diesel": 3651,
+      "Petrol": 2957,
+      "CNG/LPG": 85
+    },
+    "transmission": {
+      "Manual": 6127,
+      "Automatic": 566
+    },
+    "seller_type": {
+      "Individual": 6009,
+      "Dealer": 684
+    },
+    "is_trustmark": 27,
+    "owner": {
+      "First Owner": 4165,
+      "Second Owner": 1883,
+      "Third Owner": 492,
+      "Fourth & Above Owner": 153
+    },
+    "mileage_unit": {
+      "kmpl": 6608,
+      "km/kg": 85
+    },
+    "n_brands": 31,
+    "torque_nm_na": 3
+  }
+}
